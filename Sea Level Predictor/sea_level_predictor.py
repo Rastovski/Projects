@@ -18,7 +18,7 @@ def draw_plot():
     regression = linregress(df.loc[df['Year']>=2000, 'Year'], df.loc[df['Year']>=2000, 'CSIRO Adjusted Sea Level'])
     plt.plot(range(2000, 2051, 1), range(2000,2051,1)*regression.slope + regression.intercept, c="blue")
     plt.scatter(2050, regression.slope*2050 + regression.intercept, c="gold", s=100)
-    plt.legend(["CSIRO Adjusted Sea Level", "Linear Regression", "Year: 2050", "Year: 2050 (Best fit From Year 2000)"], loc="best")
+    plt.legend(["CSIRO Adjusted Sea Level", "Linear regression(1880-2050)", "Year: 2050", "Linear regression(Years:2000-2050)", "Year: 2050 (Data used: 2000-2050)"], loc="best")
     plt.title('Rise in Sea Level')
 
     plt.savefig('sea_level_plot.png')
