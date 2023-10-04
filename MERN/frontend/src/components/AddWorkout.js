@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { TextField, FormControl, Button } from "@mui/material";
 import { Link } from "react-router-dom"
-import "./AddWorkout.css"
+import "../styles/AddWorkout.css"
 const AddWorkout = () => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")

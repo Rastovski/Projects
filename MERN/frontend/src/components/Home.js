@@ -7,7 +7,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import "./Home.css"
+import "../styles/Home.css"
 import {useState, useEffect} from 'react'
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({

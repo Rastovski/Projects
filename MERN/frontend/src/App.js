@@ -1,7 +1,7 @@
-import Header from "./Header";
+import Header from "./components/Header";
 import {BrowserRouter, Routes, Route} from "react-router-dom"
-import Home from "./Home";
-import AddWorkout from "./AddWorkout"
+import Home from "./components/Home";
+import AddWorkout from "./components/AddWorkout"
 const App = ()=>{
   return (
    <BrowserRouter>
